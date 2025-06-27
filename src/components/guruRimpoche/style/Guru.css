@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.guru {
+  background-color: #e8f5e9;
+  padding: 100px 0;
+}
+.guru .wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 5px 25px rgb(0, 0, 0);
+}
+.guru__left {
+  max-width: 300px;
+  box-shadow: 0 5px 25px rgb(0, 0, 0);
+}
+.guru__right {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.guru__right .title {
+  padding: 0 20px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 48px;
+  color: #2e7d32;
+  overflow: hidden;
+}
+.guru__right .desc {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.guru__right .desc .intro,
+.guru__right .desc .location,
+.guru__right .desc .construction {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.guru__right .desc .intro p,
+.guru__right .desc .location p,
+.guru__right .desc .construction p {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.guru__right .desc .intro span,
+.guru__right .desc .location span,
+.guru__right .desc .construction span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+}/*# sourceMappingURL=Guru.css.map */

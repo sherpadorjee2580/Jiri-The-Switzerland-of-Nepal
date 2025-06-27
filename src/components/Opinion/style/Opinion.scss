@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.opinion {
+  padding: 100px 0;
+  background-color: white;
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .title {
+      color: #2e7d32;
+
+      font-size: 40px;
+      font-weight: bolder;
+      text-transform: capitalize;
+    }
+    .desc {
+      padding: 0 300px;
+      font-size: 20px;
+      color: #777;
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    gap: 40px;
+    padding: 10px;
+  }
+  &__col {
+    position: relative;
+    overflow: hidden;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    }
+    &-bgImage {
+      right: 20px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      z-index: 0;
+      color: #e3e3e3;
+    }
+    &-visitorInfo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 1;
+      .photo {
+        height: 60px;
+        width: 60px;
+        background-color: rgba(119, 238, 178, 0.933);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .profilePic {
+          font-size: 35px;
+          color: #2e7d32;
+        }
+      }
+      .visitor-detail {
+        display: flex;
+        flex-direction: column;
+
+        .name {
+          font-size: 20px;
+          color: black;
+          font-weight: 600;
+        }
+        .profession {
+          color: #666;
+          font-size: 16px;
+        }
+      }
+    }
+    &-review {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .review {
+        font-size: 18px;
+        color: #888;
+      }
+      .rating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: goldenrod;
+      }
+    }
+  }
+  &__btn {
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background-color: #2e7d32;
+    font-size: 18px;
+    color: white;
+    padding: 0 30px;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: inset 0 0 5px 5px rgba(111, 204, 116, 0.3);
+    }
+  }
+}

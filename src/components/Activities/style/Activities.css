@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.activities {
+  padding: 100px 0;
+  background-color: #e8f5e9;
+}
+.activities .container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.activities .wrapper {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.activities__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.activities__title .title {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2e7d32;
+}
+.activities__title .desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  max-width: 800px;
+  text-align: center;
+}
+.activities__row {
+  display: flex;
+  max-width: 1280px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  gap: 40px;
+}
+.activities__col {
+  width: 250px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.activities__col:hover {
+  transform: translateY(-5px);
+}
+.activities__col .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 15px;
+}
+.activities__col .txt p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e7d32;
+}
+.activities__col .txt span {
+  font-size: 14px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .activities {
+    width: 100vw;
+  }
+  .activities .wrapper {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  .activities__title {
+    align-items: flex-start;
+  }
+  .activities__title .title {
+    font-size: 35px;
+  }
+  .activities__title .desc {
+    text-align: left;
+    font-size: 16px;
+  }
+  .activities__row {
+    gap: 20px;
+  }
+  .activities__col {
+    max-width: 150px;
+  }
+  .activities__col .txt {
+    padding: 5px;
+  }
+  .activities__col .txt p {
+    font-size: 16px;
+  }
+  .activities__col .txt span {
+    max-height: 75px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=Activities.css.map */

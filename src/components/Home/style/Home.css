@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("hero.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+.home .container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  z-index: 1;
+}
+.home .container .welcome {
+  font-size: 30px;
+  text-transform: uppercase;
+  gap: 1px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.home .container .txt {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+.home .container .discover {
+  height: 55px;
+  width: 200px;
+  background-color: white;
+  color: #444;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .home {
+    width: 100vw;
+  }
+  .home .container {
+    max-width: 768px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .home .container .welcome {
+    font-size: 20px;
+  }
+  .home .container .txt {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .home .container .discover {
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=Home.css.map */

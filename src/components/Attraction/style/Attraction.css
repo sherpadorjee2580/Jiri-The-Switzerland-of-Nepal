@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+
+.attraction {
+  padding: 100px 0;
+  background-color: #e8f5e9;
+}
+.attraction .wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.attraction__title {
+  font-size: 40px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #2e7d32;
+  color: #2e7d32;
+  font-weight: 600;
+}
+.attraction__desc {
+  font-size: 16px;
+}
+.attraction__row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 10px 0;
+}
+.attraction__col {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.attraction__col:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.attraction__col .name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+.attraction__col .desc {
+  font-size: 14px;
+  line-height: 16px;
+  color: #374151;
+}
+.attraction__col .txt {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  gap: 10px;
+}
+.attraction__col .location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.attraction__col .location .place {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b8b78;
+}
+.attraction__col .location .icon {
+  font-size: 20px;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .attraction {
+    width: 100vw;
+  }
+  .attraction .wrapper {
+    max-width: 768px;
+    width: 100%;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+  .attraction__title {
+    font-size: 35px;
+  }
+  .attraction__desc {
+    font-size: 14px;
+  }
+  .attraction__row {
+    gap: 15px;
+    padding: 5px 0;
+    height: 260px;
+    overflow-y: scroll;
+  }
+  .attraction__col {
+    max-width: 150px;
+    max-height: 300px;
+  }
+  .attraction__col .name {
+    font-size: 16px;
+  }
+  .attraction__col .desc {
+    font-size: 12px;
+  }
+  .attraction__col .txt {
+    padding: 0 5px;
+  }
+  .attraction__col .location .place {
+    font-size: 12px;
+  }
+  .attraction__col .location .icon {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=Attraction.css.map */

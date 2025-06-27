@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contact {
+  padding-top: 100px;
+  background-color: #e8e8e8;
+  position: relative;
+}
+.contact .submitted {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contact .submitted .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8e8e8;
+  height: 150px;
+  width: 500px;
+  border-radius: 50px;
+}
+.contact .submitted .container p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #777;
+}
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 200px;
+}
+.contact__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.contact__title {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #2f855a;
+}
+.contact__desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 0.5px;
+  max-width: 600px;
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact form .emailNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact form .emailNameContainer .email,
+.contact form .emailNameContainer .name {
+  display: flex;
+  flex-direction: column;
+}
+.contact form .emailNameContainer .email label,
+.contact form .emailNameContainer .name label {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+.contact form .emailNameContainer .email input,
+.contact form .emailNameContainer .name input {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #666;
+  padding-left: 15px;
+  height: 40px;
+  width: 300px;
+}
+.contact form .emailNameContainer .email input:focus,
+.contact form .emailNameContainer .name input:focus {
+  outline: none;
+  border: 2px solid #2f855a;
+  background-color: #fff;
+}
+.contact form textarea {
+  background-color: #f5f5f5;
+  height: 150px;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #666;
+  border: none;
+}
+.contact form textarea:focus {
+  outline: none;
+  background-color: #fff;
+}
+.contact form .submit {
+  background: linear-gradient(90deg, #2f855a, #38a169);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  height: 45px;
+  border-radius: 25px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+.contact form .submit:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+.contact__bottom {
+  background-color: #2f855a;
+  width: 100vw;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+.contact__bottom-container {
+  position: absolute;
+  top: -70px;
+  width: 60%;
+  background-color: #80a186;
+  z-index: 100;
+  height: 200px;
+  overflow: visible;
+  border-radius: 5px;
+}
+.contact__bottom-row {
+  position: absolute;
+  top: -40px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+@keyframes logoAnimate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.contact__bottom-col {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+.contact__bottom-col .logo {
+  height: 80px;
+  width: 80px;
+  background-color: #2f855a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  animation: logoAnimate 2s linear infinite;
+}
+.contact__bottom-col .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.contact__bottom-col .desc {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  text-transform: capitalize;
+}/*# sourceMappingURL=Contact.css.map */

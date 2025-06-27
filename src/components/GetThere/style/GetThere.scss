@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.gettingThere {
+  padding: 50px 0;
+  background-color: #e8f5e9;
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    .title {
+      font-size: 50px;
+      font-weight: 600;
+      color: #2f855a;
+    }
+    .desc {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      max-width: 600px;
+      flex-wrap: wrap;
+      justify-content: center;
+      .how {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 200px;
+        text-align: center;
+        &__icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .icon {
+            font-size: 80px;
+            color: #2f855a;
+          }
+          p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2f855a;
+          }
+        }
+        &__desc {
+          font-size: 14px;
+          font-weight: 400;
+          color: #444;
+        }
+      }
+    }
+  }
+  &__right {
+    padding: 16px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+}

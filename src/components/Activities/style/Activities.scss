@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.activities {
+  padding: 100px 0;
+  background-color: #e8f5e9;
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+      font-size: 50px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #2e7d32;
+    }
+    .desc {
+      font-size: 18px;
+      font-weight: 400;
+      color: #444;
+      max-width: 800px;
+      text-align: center;
+    }
+  }
+  &__row {
+    display: flex;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    gap: 40px;
+  }
+  &__col {
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      //   box-shadow: inset 0 -10px 20px -10px  rgba(0,0,0,0.5);
+      transform: translateY(-5px);
+    }
+    .txt {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 15px;
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #2e7d32;
+      }
+      span {
+        font-size: 14px;
+        color: #444;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .activities {
+    width: 100vw;
+    .wrapper {
+      width: 100%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 20px;
+    }
+    &__title{
+      align-items: flex-start;
+      .title{
+        font-size: 35px;
+      }
+      .desc{
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+    &__row{
+      gap: 20px;
+    }
+    &__col{
+      max-width: 150px;
+      .txt{
+        padding: 5px;
+        p{
+          font-size: 16px;
+        }
+        span{
+          max-height: 75px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

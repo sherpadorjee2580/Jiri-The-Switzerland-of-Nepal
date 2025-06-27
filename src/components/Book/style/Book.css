@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.book {
+  padding: 100px 0;
+  background-color: #2f855a;
+}
+.book .wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.book__title {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.book__desc {
+  text-align: center;
+  padding: 0 350px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+.book__btnContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.book__btnContainer .bookNow,
+.book__btnContainer .contact {
+  background-color: transparent;
+  color: white;
+  height: 55px;
+  padding: 0 50px;
+  font-size: 20px;
+  border-radius: 50px;
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
+}
+.book__btnContainer .bookNow.onClick,
+.book__btnContainer .contact.onClick {
+  background-color: white;
+  color: #2f855a;
+}/*# sourceMappingURL=Book.css.map */

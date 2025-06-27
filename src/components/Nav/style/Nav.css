@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  transition: all 0.3s ease-in-out;
+  z-index: 180;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 8px;
+  height: 100%;
+  width: 100%;
+}
+nav .toggle .line1,
+nav .toggle .line2 {
+  position: absolute;
+  height: 4px;
+  background-color: white;
+  width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+nav .toggle .line1 {
+  top: 40px;
+}
+nav .toggle .line2 {
+  top: 50px;
+}
+nav .toggle .line1.open {
+  transform: rotate(-225deg);
+  top: 45px;
+}
+nav .toggle .line2.open {
+  transform: rotate(225deg);
+  top: 45px;
+}
+nav .navbar {
+  padding: 0 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+nav .navbar__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navbar__left .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+nav .navbar__left .logo span {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+nav .navbar__right {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+nav .navbar__right ul {
+  display: flex;
+  gap: 60px;
+}
+nav .navbar__right ul li {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+nav .navbar__right ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  background-color: white;
+  height: 1.5px;
+  transition: all 0.5s ease-in-out;
+}
+nav .navbar__right ul li:hover::after {
+  width: 100%;
+  left: 0;
+}
+nav .navbar__right ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+  nav .toggle .line1,
+  nav .toggle .line2 {
+    height: 3px;
+    width: 25px;
+  }
+  nav .toggle .line1 {
+    top: 25px;
+  }
+  nav .toggle .line2 {
+    top: 35px;
+  }
+}/*# sourceMappingURL=Nav.css.map */
