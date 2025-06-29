@@ -43,6 +43,10 @@
         align-items: center;
         max-width: 200px;
         text-align: center;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 10px;
+        padding: 15px 10px;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
         &__icon {
           display: flex;
           flex-direction: column;
@@ -73,5 +77,41 @@
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+  }
+}
+@media (max-width:768px){
+  .gettingThere{
+    width: 100vw;
+    .wrapper{
+      width: 100%;
+      flex-direction: column;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+    &__left{
+      align-items: flex-start;
+      .title{
+        font-size: 30px;
+      }
+      .desc{
+        .how{
+          max-width: 150px;
+          &__icon{
+            .icon{
+              font-size: 40px;
+            }
+            p{
+              font-size: 16px;
+            }
+          }
+          &__desc{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__right{
+      display: none;
+    }
   }
 }

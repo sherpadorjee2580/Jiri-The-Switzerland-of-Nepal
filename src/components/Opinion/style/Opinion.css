@@ -39,6 +39,8 @@
   font-size: 40px;
   font-weight: bolder;
   text-transform: capitalize;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .opinion__title .desc {
   padding: 0 300px;
@@ -142,4 +144,64 @@
 .opinion__btn:hover {
   transform: translateY(-5px);
   box-shadow: inset 0 0 5px 5px rgba(111, 204, 116, 0.3);
+}
+
+@media (max-width: 768px) {
+  .opinion {
+    width: 100vw;
+  }
+  .opinion .wrapper {
+    padding: 0 20px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .opinion__title {
+    width: 100%;
+  }
+  .opinion__title .title {
+    font-size: 20px;
+  }
+  .opinion__title .desc {
+    width: 100%;
+    font-size: 12px;
+    padding: 0;
+  }
+  .opinion__row {
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .opinion__col {
+    max-width: 160px;
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .opinion__col-bgImage {
+    right: 5px;
+    font-size: 15px;
+  }
+  .opinion__col-visitorInfo .photo {
+    height: 30px;
+    width: 30px;
+  }
+  .opinion__col-visitorInfo .photo .profilePic {
+    font-size: 15px;
+  }
+  .opinion__col-visitorInfo .visitor-detail .name {
+    font-size: 12px;
+  }
+  .opinion__col-visitorInfo .visitor-detail .profession {
+    font-size: 10px;
+  }
+  .opinion__col-review .review {
+    font-size: 10px;
+  }
+  .opinion__col-review .rating {
+    font-size: 10px;
+  }
+  .opinion__btn {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=Opinion.css.map */

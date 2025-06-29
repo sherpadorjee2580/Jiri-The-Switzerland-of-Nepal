@@ -16,11 +16,10 @@
 }
 .guru .wrapper {
   max-width: 1180px;
+  border-radius: 25px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  background-color: white;
-  border-radius: 50px;
   box-shadow: 0 5px 25px rgb(0, 0, 0);
 }
 .guru__left {
@@ -71,4 +70,45 @@
   font-size: 16px;
   font-weight: 400;
   color: #444;
+}
+
+@media (max-width: 768px) {
+  .guru {
+    width: 100vw;
+  }
+  .guru .wrapper {
+    width: 100%;
+    border-radius: 25px;
+    padding: 25px 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .guru__left {
+    display: none;
+  }
+  .guru__right {
+    width: 100%;
+    align-items: flex-start;
+    padding: 0;
+    gap: 15px;
+  }
+  .guru__right .title {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 0;
+    text-align: left;
+  }
+  .guru__right .desc {
+    padding: 0;
+  }
+  .guru__right .desc .intro p,
+  .guru__right .desc .location p,
+  .guru__right .desc .construction p {
+    font-size: 16px;
+  }
+  .guru__right .desc .intro span,
+  .guru__right .desc .location span,
+  .guru__right .desc .construction span {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Guru.css.map */

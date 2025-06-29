@@ -99,4 +99,46 @@
   padding-bottom: 30px;
   font-size: 16px;
   color: #777;
+}
+
+@media (max-width: 768px) {
+  .choose {
+    width: 100vw;
+  }
+  .choose .wrapper {
+    width: 100%;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+  .choose__title {
+    width: 100%;
+  }
+  .choose__title .title {
+    font-size: 25px;
+  }
+  .choose__title .desc {
+    padding: 0;
+    font-size: 14px;
+  }
+  .choose__row {
+    gap: 15px;
+    padding: 10px 0;
+  }
+  .choose__col {
+    max-width: 160px;
+    padding: 10px 0;
+    gap: 5px;
+  }
+  .choose__col-icon .icon {
+    font-size: 40px;
+  }
+  .choose__col-title, .choose__col-desc, .choose__col-icon {
+    padding: 0 10px;
+  }
+  .choose__col-title {
+    font-size: 16px;
+  }
+  .choose__col-desc {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Choose.css.map */

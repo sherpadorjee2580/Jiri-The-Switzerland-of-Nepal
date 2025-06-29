@@ -66,9 +66,8 @@
       .choose__col-icon {
         transform: scale(1.1);
       }
-      .choose__col-icon .icon{
+      .choose__col-icon .icon {
         color: #4a6741;
-        
       }
     }
     &-icon {
@@ -97,6 +96,51 @@
       padding-bottom: 30px;
       font-size: 16px;
       color: #777;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .choose {
+    width: 100vw;
+    .wrapper {
+      width: 100%;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+    &__title {
+      width: 100%;
+      .title {
+        font-size: 25px;
+      }
+      .desc {
+        padding: 0;
+        font-size: 14px;
+      }
+    }
+    &__row {
+      gap: 15px;
+      padding: 10px 0;
+    }
+    &__col {
+      max-width: 160px;
+      padding: 10px 0;
+      gap: 5px;
+      &-icon {
+        .icon {
+          font-size: 40px;
+        }
+      }
+      &-title,
+      &-desc,
+      &-icon {
+        padding: 0 10px;
+      }
+      &-title {
+        font-size: 16px;
+      }
+      &-desc {
+        font-size: 14px;
+      }
     }
   }
 }

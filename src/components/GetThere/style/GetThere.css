@@ -48,6 +48,10 @@
   align-items: center;
   max-width: 200px;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 .gettingThere__left .desc .how__icon {
   display: flex;
@@ -76,4 +80,37 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .gettingThere {
+    width: 100vw;
+  }
+  .gettingThere .wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+  .gettingThere__left {
+    align-items: flex-start;
+  }
+  .gettingThere__left .title {
+    font-size: 30px;
+  }
+  .gettingThere__left .desc .how {
+    max-width: 150px;
+  }
+  .gettingThere__left .desc .how__icon .icon {
+    font-size: 40px;
+  }
+  .gettingThere__left .desc .how__icon p {
+    font-size: 16px;
+  }
+  .gettingThere__left .desc .how__desc {
+    font-size: 12px;
+  }
+  .gettingThere__right {
+    display: none;
+  }
 }/*# sourceMappingURL=GetThere.css.map */
