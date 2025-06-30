@@ -58,4 +58,35 @@
 .book__btnContainer .contact.onClick {
   background-color: white;
   color: #2f855a;
+}
+
+@media (max-width: 768px) {
+  .book {
+    width: 100vw;
+  }
+  .book .wrapper {
+    padding: 0 20px;
+    width: 100%;
+    gap: 15px;
+  }
+  .book__title {
+    font-size: 25px;
+    text-align: left;
+  }
+  .book__desc {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+  }
+  .book__btnContainer {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .book__btnContainer .bookNow,
+  .book__btnContainer .contact {
+    display: flex;
+    height: 40px;
+    font-size: 14px;
+    flex: 1;
+  }
 }/*# sourceMappingURL=Book.css.map */

@@ -18,8 +18,19 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  .angle-up{
+  z-index: 1000;
+  .angle-up {
     color: white;
     font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .up-icon {
+    height: 35px;
+    width: 35px;
+    .angle-up {
+      font-size: 20px;
+    }
   }
 }

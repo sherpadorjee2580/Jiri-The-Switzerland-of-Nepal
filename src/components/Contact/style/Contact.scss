@@ -99,7 +99,7 @@
           padding-left: 15px;
           height: 40px;
           width: 300px;
-      
+
           &:focus {
             outline: none;
             border: 2px solid #2f855a;
@@ -210,6 +210,67 @@
         font-size: 12px;
         color: white;
         text-transform: capitalize;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    width: 100vw;
+
+    &__container {
+      width: 100%;
+      padding: 0 20px;
+    }
+    &__top {
+      width: 100%;
+      padding-bottom: 75px;
+    }
+    &__title {
+      font-size: 35px;
+    }
+    &__desc {
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    form {
+      width: 100%;
+      .emailNameContainer {
+        width: 100%;
+        flex-direction: column;
+        .email,
+        .name {
+          gap: 5px;
+        }
+      }
+    }
+    &__bottom {
+      display: none;
+      width: 100vw;
+      height: 380px;
+      &-container {
+        height: 500px;
+        padding: 0 20px;
+      }
+      &-row {
+        width: 100%;
+        left: 0%;
+      }
+      &-col {
+        gap: 5px;
+        .logo {
+          height: 50px;
+          width: 50px;
+          .icons {
+            font-size: 30px;
+          }
+        }
+        .title {
+          font-size: 16px;
+        }
+        .desc {
+          font-size: 12px;
+        }
       }
     }
   }

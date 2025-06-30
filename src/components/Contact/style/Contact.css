@@ -213,4 +213,65 @@
   font-size: 12px;
   color: white;
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 100vw;
+  }
+  .contact__container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .contact__top {
+    width: 100%;
+    padding-bottom: 75px;
+  }
+  .contact__title {
+    font-size: 35px;
+  }
+  .contact__desc {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .contact form .emailNameContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contact form .emailNameContainer .email,
+  .contact form .emailNameContainer .name {
+    gap: 5px;
+  }
+  .contact__bottom {
+    display: none;
+    width: 100vw;
+    height: 380px;
+  }
+  .contact__bottom-container {
+    height: 500px;
+    padding: 0 20px;
+  }
+  .contact__bottom-row {
+    width: 100%;
+    left: 0%;
+  }
+  .contact__bottom-col {
+    gap: 5px;
+  }
+  .contact__bottom-col .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .contact__bottom-col .logo .icons {
+    font-size: 30px;
+  }
+  .contact__bottom-col .title {
+    font-size: 16px;
+  }
+  .contact__bottom-col .desc {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Contact.css.map */
